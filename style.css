@@ -1,0 +1,91 @@
+*{
+		padding: 0;
+		margin: 0;
+}
+body{
+		margin: 0;
+		padding: 0;
+		background-color: rgb(62, 61, 61);
+		height: 100vh;
+}
+footer {
+		margin-top: 60px;
+		text-align: center;
+		padding: 3px;
+		color: white;
+		text-decoration:none;
+}
+h1{
+	padding-top: 30px;
+	margin-bottom: 30px;
+	font-size: 70px;
+	color: white;
+}
+#buttonBox{
+		text-align: center;
+		width: 100%;
+}
+.refreshButton{
+		height: 100%;
+		width: 810px;
+		background-color: #000000;
+		border-top: 5px solid white;
+		border-bottom: 5px solid #E0D7D7;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		margin: 0px;
+		padding: 20px;
+		cursor: pointer;
+}
+#gamebox{
+		text-align: center;
+		width: 100%;
+}
+#game{
+		width: 800px;
+		height: 200px;
+		border-top: 5px solid black;
+		border-right: 5px solid black;
+		border-left: 5px solid black;
+		border-bottom: 5px dashed black;
+		background-color: white;
+		margin:auto;
+		position:relative;
+}
+#character{
+		width: 60px;
+		height: 50px;
+		background-image: url(batmobile.jpg);
+		background-repeat: no-repeat;
+		background-color: black;
+		position: relative;
+		top: 150px;
+		z-index: 2;
+}
+.animate{
+	animation: jump 500ms;
+}
+@keyframes jump{
+		0%{top: 150px;}
+		30%{top: 100px;}
+		70%{top: 100px;}
+		100%{top: 150px;}
+}
+#block{
+		width: 80px;
+		height: 50px;
+		background-image: url(police.jpg);
+		background-repeat: no-repeat;
+		background-color: blue;
+		position: relative;
+		top: 100px;
+		left: 480px;
+		animation: block 1s infinite linear;
+		z-index: 1;
+}
+@keyframes block{
+		0%{left: 715px;}
+		100%{left: -40px;}
+}
